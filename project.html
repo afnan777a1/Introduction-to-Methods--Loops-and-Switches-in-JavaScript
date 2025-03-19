@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Javascript String Methods and Loops</h2>
+    <p>Numbers form 1 to 10</p>
+    <p id="result"></p>
+
+    <script>
+      document.body.style.backgroundColor = "Lightgreen";
+      document.getElementById("result").style.color = "green";
+      var number = "";
+      for (i = 1; i < 11; i++) {
+        number += i + "<br>";
+      }
+
+      document.getElementById("result").innerHTML = number;
+
+      document.write("The random value is " + Math.floor(Math.random() * 100));
+      document.write("<br>");
+
+      var date = new Date();
+      document.write("Today's Date is " + date.getDate());
+    </script>
+  </body>
+</html>
